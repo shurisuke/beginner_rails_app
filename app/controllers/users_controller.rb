@@ -77,4 +77,5 @@ class UsersController < ApplicationController
     def set_show_title
       @show_title = 'ユーザー詳細'
     end
+    
 end
