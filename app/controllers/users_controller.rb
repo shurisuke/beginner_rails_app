@@ -69,7 +69,7 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:name, :age)
+      params.require(:user).permit(:name, :age, :tel, :address)
     end
 
     def set_index_title
@@ -79,5 +79,4 @@ class UsersController < ApplicationController
     def set_show_title
       @show_title = 'ユーザー詳細'
     end
-    
 end
